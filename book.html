@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+<!-- Book Navbar Section -->
+<header>
+    <nav class="book-navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="#">Book Library</a>
+        </div>
+
+        <!-- Navigation Links Section -->
+        <ul class="nav-links">
+            <li><a href="#" onclick="toggleSection('home')">Home</a></li>
+            <li><a href="#" onclick="toggleSection('browse-books')">Browse Books</a></li>
+            <li><a href="#" onclick="toggleSection('categories')">Categories</a></li>
+            <li><a href="#" onclick="toggleSection('new-arrivals')">New Arrivals</a></li>
+            <li><a href="#" onclick="toggleSection('contact')">Contact Us</a></li>
+        </ul>
+
+        <!-- Search Bar Section -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for books...">
+        </div>
+    </nav>
+</header>
+
+<div id="browse-books" class="content-section" style="display: none;">
+    <h2>Browse Books</h2>
+    <p>Here you can browse through various books.</p>
+</div>
+
+<div id="categories" class="content-section" style="display: none;">
+    <h2>Book Categories</h2>
+    <p>Explore different book categories.</p>
+</div>
+
+<div id="new-arrivals" class="content-section" style="display: none;">
+    <h2>New Arrivals</h2>
+    <p>Check out the latest books added to our library.</p>
+</div>
+
+<div id="contact" class="content-section" style="display: none;">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out.</p>
+</div>
+
+ </nav>
+    </header>
+    <!-- Home Page Content -->
+    <section class="hero">
+        <h1>Welcome to eBook Library</h1>
+        <p>Explore a world of books with a simple click.</p>
+    </section>
+
+    <!-- 3D Book Categories -->
+    <section class="book-categories">
+        <h2>Explore by Categories</h2>
+        <div class="categories-container">
+            <div class="category-card" id="category1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Fiction</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Explore our collection of thrilling fiction books.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card" id="category2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Non-Fiction</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Browse through insightful non-fiction books.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card" id="category3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Science</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Discover the world of science and knowledge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- New Section with Catchy Lines and 3D Effect -->
+        <section class="catchy-section">
+            <h2 class="catchy-heading">Step into a World of Knowledge</h2>
+            <p class="catchy-line">Books are windows to new worlds. What world will you discover today?</p>
+            <p class="catchy-line">Unleash your imagination and dive into your next great adventure.</p>
+            <div class="catchy-btn-container">
+                <button class="catchy-btn">Browse Books</button>
+            </div>
+        </section>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- Browse Books Section -->
+<section class="browse-books">
+    <h2 class="browse-heading">Browse Books</h2>
+    <div class="books-list">
+        <div class="book-item">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="book.jpeg" alt="Book 1">
+                    <h3>Stories We Never Tells
+                    </h3>
+                </div>
+                <div class="card-back">
+                    <p><strong>Author:</strong>Author: Sabrina Benaim
+                    </p>
+                    <p>  Description: This is a collection of poetry and prose that explores themes of mental health, love, identity, and self-expression. Sabrina Benaim is a spoken word artist who touches on personal struggles and triumphs. Her poetry, which deals with heartbreak and vulnerability, resonated with many readers, especially through her viral spoken word performances.</p>
+                        <button class="browse-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-item">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="book3.jpeg" alt="Book 2">
+                    <h3> "Wrong Time, Wrong Place" </h3>
+                </div>
+                <div class="card-back">
+                    <p><strong>Author:</strong> Simone Harper
+                    </p>
+                    <p>Description: This novel revolves around the concept of destiny and timing. The story focuses on two characters who meet at an unexpected moment in their lives and develop a complicated romantic relationship. It explores themes of love, fate, and the idea that timing can shape the direction of people's lives. The characters go through various challenges, questioning their choices and the paths they've taken, leading to a journey of self-discovery.
+                    </p>
+                                       
+                    <button class="browse-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-item">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="book5.jpeg" alt="Book 3">
+                    <h3>The Book of Mood
+                    </h3>
+                </div>
+                <div class="card-back">
+                    <p><strong>Author:</strong>Author: Lauren Martin
+                    </p>
+                    <p>Description: The Book of Mood by Lauren Martin is a guide that offers practical advice and insights for understanding and managing your emotions. The book delves into how mood affects our daily lives, relationships, and decision-making. It uses a blend of humor, personal anecdotes, and psychological insight to provide tools and strategies to navigate various moods such as sadness, stress, anger, and anxiety.</p>
+                        <button class="browse-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- More book items can be added here -->
+    </div>
+</section>
+<!-- Extended Browse Books Section -->
+<section class="browse-books">
+    <h2 class="browse-heading">Browse Books</h2>
+    <div class="books-list">
+        <!-- Book Item 1 -->
+        <div class="book-item">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="book6.jpeg" alt="Book 1">
+                    <h3><group>Hollywood by Charles Bukowski
+                    </h3>
+                </div>
+                <div class="card-back">
+                    <p><strong>Author:</strong>Author: Charles Bukowski
+                    </p>
+                    <p>A brief description of the book goes here. This section will contain information about the plot and genre.</p>
+                    <button class="browse-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- Genres Section -->
+<section class="genres">
+    <h2 class="section-heading">Explore by Genre</h2>
+    <div class="genre-list">
+        <div class="genre-card">
+            <h3>Fiction</h3>
+        </div>
+        <div class="genre-card">
+            <h3>Non-Fiction</h3>
+        </div>
+        <div class="genre-card">
+            <h3>Science</h3>
+        </div>
+        <div class="genre-card">
+            <h3>History</h3>
+        </div>
+        <div class="genre-card">
+            <h3>Fantasy</h3>
+        </div>
+        <div class="genre-card">
+            <h3>Biography</h3>
+        </div>
+    </div>
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2 class="section-heading">What Our Readers Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p>"This eBook Library has a wide selection of books. I found exactly what I was looking for!"</p>
+            <h3>- Reader 1</h3>
+        </div>
+        <div class="testimonial-card">
+            <p>"The interface is easy to use, and the 3D book feature is very interactive. Highly recommend!"</p>
+            <h3>- Reader 2</h3>
+        </div>
+        <div class="testimonial-card">
+            <p>"I love the variety of genres available, and the descriptions are spot on. My go-to reading site!"</p>
+            <h3>- Reader 3</h3>
+        </div>
+    </div>
+</section>
+<!-- Money Section -->
+<section class="category-section" id="money">
+    <h2 class="section-heading">Money & Finance</h2>
+    <div class="category-container">
+        <!-- Book 1 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="rich.jpeg" alt="Money Book 1">
+                    <h3>Building wealth through smart investments</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 1</p>
+                    <p>Master your finances for a secure future.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Book 2 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="money.jpeg" alt="Money Book 2">
+                    <h3>The psychology of Money</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 2</p>
+                    <p>Money Management.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mindset Section -->
+<section class="category-section" id="mindset">
+    <h2 class="section-heading">Mindset & Growth</h2>
+    <div class="category-container">
+        <!-- Book 1 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="mind.jpeg" alt="Mindset Book 1">
+                    <h3>Growth Mindset</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 3</p>
+                    <p>Changing your mindset for success.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Book 2 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="grow.jpeg" alt="Mindset Book 2">
+                    <h3>Mindset Mastery</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 4</p>
+                    <p>Unlock your potential through mindset shifts.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Self-Help Section -->
+<section class="category-section" id="self-help">
+    <h2 class="section-heading">Self-Help</h2>
+    <div class="category-container">
+        <!-- Book 1 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="don.jpeg" alt="Self Help Book 1">
+                    <h3>Becoming Your Best Self</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 5</p>
+                    <p>Transform yourself and live your best life.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Book 2 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="bes.jpeg" alt="Self Help Book 2">
+                    <h3>Self-Discovery Journey</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 6</p>
+                    <p>A guide to understanding yourself better.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Overthinking Section -->
+<section class="category-section" id="overthinking">
+    <h2 class="section-heading">Overthinking</h2>
+    <div class="category-container">
+        <!-- Book 1 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="art.jpeg" alt="Overthinking Book 1">
+                    <h3>Stop Overthinking</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 7</p>
+                    <p>How to overcome overthinking and live freely.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Book 2 -->
+        <div class="book-item">
+            <div class="book-card">
+                <div class="book-front">
+                    <img src="not.jpeg" alt="Overthinking Book 2">
+                    <h3>Overcoming Anxiety</h3>
+                </div>
+                <div class="book-back">
+                    <p><strong>Author:</strong> Author 8</p>
+                    <p>Practical tips for overcoming anxiety.</p>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </div>
+        </div>
+       </section>
+       <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> info@ebooklibrary.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> 123 E-Book St, City, Country</p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank" class="social-icon facebook">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank" class="social-icon twitter">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" class="social-icon instagram">Instagram</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 E-Book Library. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js">
+        // Toggle mobile navbar visibility
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+// Example for showing a message when "Read More" is clicked in the Featured Books section
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        alert('More details will be displayed soon!');
+    });
+});
+// Function to toggle between sections
+function toggleSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the clicked section
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.style.display = 'block';
+    }
+}
+
+    </script>
+</body>
+</html>
