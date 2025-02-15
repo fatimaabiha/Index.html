@@ -1,0 +1,556 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2c2f33; 
+    color: #f4f4f4; 
+}
+
+header {
+    background-color: #222; 
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar with Hover Effects */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Navbar */
+nav ul li a:hover {
+    color:maroon;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f4a300; /* Gold underline on hover */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Hero Section with Dark Gradient */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 2rem 2rem;
+    background: linear-gradient(45deg, #504040, #729acf); /* Darker gradient background */
+    min-height: 100vh;
+    color: #f4f4f4;
+}
+
+/* Hero Text Styling */
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text button {
+    padding: 0.8rem 1.5rem;
+    background-color:#0ef; /* Dark button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    animation: fadeInUp 2.5s ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Button */
+.hero-text button:hover {
+    background-color: #f4a300; /* Luxurious gold on hover */
+    transform: scale(1.05);
+}
+
+.hero-image img {
+    max-width: 70%;
+    border-radius: 16px;
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 4rem 2rem;
+    background-color:#282828; /* Dark background for about section */
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #ddd; /* Lighter text color for readability */
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 2rem;
+    background-color:white; /* Dark background for services */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1.5s ease-in-out;
+    color:white;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color:#333; /* Darker background for service items */
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Service Item */
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background-color:#0ef; /* Slightly lighter dark background */
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background-color:#2c2f33;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1.5s ease-in-out;
+    color: #f4f4f4;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background-color:#0ef;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Project Item */
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-item p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #f4f4f4;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* General reset for box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Contact section styling */
+  .contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 32px;
+    color:white;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    color:white;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Label and input fields styling */
+  label {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    justify-items: center;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional responsive design */
+  @media (max-width: 600px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    label, input, textarea {
+      font-size: 16px;
+    }
+  
+    button {
+      padding: 10px 20px;
+    }
+  }
+  
+
+/* Button Styling */
+.submit-btn {
+    padding: 1rem;
+    background-color:#0ef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.submit-btn:hover {
+    background-color: #0ef;
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.submit-btn:active {
+    transform: translateY(0); /* Reset position when clicked */
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Social Media Styles */
+.social-media {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #333; 
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects for Social Media Icons */
+.social-icon:hover {
+    background-color:#0ef; /* Luxurious gold hover effect */
+    transform: scale(1.1);
+}
+
+.social-icon i {
+    transition: transform 0.3s ease;
+}
+
+/* Animation for the icons */
+.social-icon:hover i {
+    transform: rotate(360deg); /* Icon rotates on hover */
+}
+
+/* Additional Styling for Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background-color: #2c2f33; /* Dark background for contrast */
+    color: white;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover Effect for Input Fields */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #f4a300;
+}
+
+/* Focus Effect for Input Fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #f4a300; /* Gold border when focused */
+}
+
+/* Button Styling */
+.submit-btn {
+    padding: 1rem;
+    background-color: #f4a300;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.submit-btn:hover {
+    background-color: #ff7f00;
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.submit-btn:active {
+    transform: translateY(0); /* Reset position when clicked */
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,165 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="portfolio1.css">
+<body>
+    <body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#Contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h3>Hello it's me<br></h3>
+            <h1>Fatima Abiha</h1>
+            <h2>And I'm a <span id="fro">Front-end Developer</span></h2>
+            <p> I’m a passionate Frontend Developer focused on crafting seamless, user-friendly, and visually stunning web experiences.
+            </p>
+            <a href="cv.pdf"><button>Downlaod CV</button></a>
+            
+            
+        </div>
+        <div class="hero-image">
+            <img src="fatima.jpeg" alt="Hero Image">
+        </div>
+    </section>
+    
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>Hi, I’m Fatima Abiha, a frontend developer focused on creating clean, fast, and user-friendly websites. I specialize in turning ideas into interactive and visually appealing digital experiences using HTML, CSS, JavaScript, and React. Whether you’re starting from scratch or refining an existing project, I’m here to help bring your vision to life with attention to detail and quality.
+
+        </p>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Crafting dynamic websites with React, Bootstrap, and more.</p>
+            </div>
+            <div class="service-item">
+                <h3>WordPress Development</h3>
+                <p>Creating custom themes and plugins for WordPress websites.</p>
+            </div>
+            <div class="service-item">
+                <h3>UI/UX Design</h3>
+                <p>Designing beautiful and user-friendly interfaces with Tailwind CSS.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Our Projects</h2>
+        <div class="project-container">
+            <div class="project-item" onclick="openProject('cake.html')">
+                <img src="lipstick.jpeg" a href="https:///C:/Users/Dell/Desktop/New%20folder%20(2)/home.jpeg">
+                <a href="home.html"><p>Project 1</p></a>
+                
+            </div>
+            <div class="project-item" onclick="openProject('bag.html')">
+                <img src="bag2.jpeg" alt="Project 2">
+                     <a href="bag.html"> <p>Project 2</p></a>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-item" onclick="openProject('cake.html')">
+                <img src="cake8.jpeg" alt="Project 3">
+                       <a href="cake.html">  <p>Project 3</p></a>
+            </div>
+            <div class="project-item" onclick="openProject('book.html')">
+                <img src="money.jpeg" alt="Project 4">
+             <a href="book.html"><p>Project 4</p></a>
+            </div>
+        </div>
+        
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch with me if you have any questions or want to collaborate!</p>
+                <form
+                action="https://formspree.io/f/xzzdvgpj"
+                method="POST"
+              >
+              <label>
+                your Name:
+                <input type="text" name="name"><br>
+                <label>
+                  Your email:
+                  <input type="email" name="email"><br>
+                </label>
+                <label>
+                  Your message:
+                  <textarea name="message"></textarea><br>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+              </form>
+                <!-- Social Media Links -->
+                <div class="social-media">
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin">linkedin</i>
+                    </a>
+                    <a href="https://www.github.com" target="_blank" class="social-icon">
+                        <i class="fab fa-github"> github</i>
+                    </a>
+                    </a>
+                    <a href="https://www.instagram.com/bluebilss__?igsh=azJmNGdkdWU1OWUy
+                    " target="_blank" class="social-icon">
+                        <i class="fab fa-instagram">instagram</i>
+                    </a>
+                </div>
+            </div>
+        </section>
+            
+    
+    </body>
+    <script>
+    // Smooth scrolling on click for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1); // Remove the '#' from href
+            const targetSection = document.getElementById(targetId);
+            
+            // Smooth scroll to section
+            window.scrollTo({
+                top: targetSection.offsetTop - 70, // Offset for header
+                behavior: 'smooth'
+            });
+        });
+    });
+    // Form Validation and Animation on Submit
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.querySelector('.submit-btn');
+    
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent form submission for demo purposes
+    
+        // Animation for button on submit
+        submitBtn.classList.add('submitted');
+        submitBtn.innerText = "Message Sent!";
+        
+        setTimeout(() => {
+            submitBtn.classList.remove('submitted');
+            submitBtn.innerText = "Send Message"; // Reset text after 2 seconds
+        }, 2000);
+    
+        // You can implement your form submission logic here
+        alert("Your message has been sent!");
+    });
+    </Script>
+    
