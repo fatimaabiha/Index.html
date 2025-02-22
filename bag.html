@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Bags</title>
+    <link rel="stylesheet" href="bag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Luxury Bags</div>
+        <ul class="nav-links">
+            <li><a href="bag.html">Home</a></li>
+            <li><a href="mens.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Luxury Handbags</h1>
+            <p class="fade-in">Discover premium quality leather bags with a touch of elegance.</p>
+            <button class="btn fade-in">Shop Now</button>
+        </div>
+        <div class="bag-container">
+            <div class="bag"></div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="shop" class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="yes.jpeg" alt="Everyday Tote">
+                <h3>The Everyday Tote</h3>
+                <p>Perfect for work or weekend.</p>
+            </div>
+            <div class="product">
+                <img src="55.jpeg" alt="Travel Backpack">
+                <h3>The Travel Backpack</h3>
+                <p>Adventure-ready and durable.</p>
+            </div>
+            <div class="product">
+                <img src="gi.jpeg" alt="Classic Clutch">
+                <h3>The Classic Clutch</h3>
+                <p>Elegant and timeless.</p>
+            </div>
+        </div>
+    </section>
+
+  <script>
+
+      
+        // Add smooth scroll effect to the hero section
+document.querySelector('.btn').addEventListener('click', function () {
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+    });
+});
+
+// Add a 3D animation to the navbar on scroll
+let navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) {
+        navbar.style.transform = "translateY(-20px)";
+    } else {
+        navbar.style.transform = "translateY(0)";
+    }
+});
+
+      </script>
+      </body>
+<body>
+
+    <!-- Product Gallery Section -->
+    <section class="product-gallery">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="bag3.jpeg" alt="Product 1">
+                </div>
+                <div class="product-text">
+                    <h3>Elegant Tote</h3>
+                    <p>Perfect for a day at the beach or a casual outing. Crafted from premium leather.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="bag4.jpeg" alt="Product 2">
+                </div>
+                <div class="product-text">
+                    <h3>Classic Satchel</h3>
+                    <p>A timeless design. The satchel is ideal for formal events and evening outings.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="bag6.jpeg" alt="Product 3">
+                </div>
+                <div class="product-text">
+                    <h3>Chic Clutch</h3>
+                    <p>Designed for elegance and comfort. A perfect accessory for an elegant evening.</p>
+                </div>
+            </div>
+        </div>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At Bag It Bad, we believe that a great bag is more than just an accessory—it's a statement. Our mission is to provide you with high-quality, stylish bags that fit your lifestyle. Whether you're heading to work, hitting the gym, or going out for a night on the town, we've got the perfect bag for you.</p>
+            </div>
+        </section>
+    
+    </section>
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"I absolutely love my new Classic Tote! It's stylish and practical, perfect for everyday use."</p>
+                    <p>- Jane D.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The Leather Backpack is my go-to bag for work and travel. It's durable and looks great!"</p>
+                    <p>- John S.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The Evening Clutch is perfect for nights out. I get so many compliments whenever I carry it."</p>
+                    <p>- Sarah L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Elevate Your Style?</h2>
+            <a href="#shop" class="btn-primary">Shop Now</a>
+            <a href="#shop" class="btn-secondary">Browse the Collection</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    
+</footer>
+
+    <script>
+        // This code will add hover zoom effect to product images and log the product name when clicked.
+
+// Get all product images
+const productImages = document.querySelectorAll('.product-img img');
+
+// Add hover zoom effect to images
+productImages.forEach(image => {
+    image.addEventListener('mouseover', () => {
+        // Apply zoom effect when mouse is over the image
+        image.style.transform = 'scale(1.1)';
+    });
+
+    image.addEventListener('mouseout', () => {
+        // Reset the zoom effect when mouse is removed from the image
+        image.style.transform = 'scale(1)';
+    });
+});
+
+// Get all product items (to add click event listeners)
+const productItems = document.querySelectorAll('.product-item');
+
+// Add click event listener to each product item
+productItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Get the product title (product name)
+        const productName = item.querySelector('.product-text h3').textContent;
+        
+        // Show an alert with the product name
+        alert(`You clicked on ${productName}`);
+    });
+});
+
+ // Smooth scrolling with animation for buttons
+ document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        // Add a small animation to simulate the button being clicked
+        this.style.transform = "scale(0.95)";
+        setTimeout(() => {
+            this.style.transform = "scale(1)";
+        }, 200);
+
+        // Scroll smoothly to the target element
+        window.scrollTo({
+            top: targetElement.offsetTop - 50, // Adjust to add some space at the top
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+
+</body>
+</html>
